@@ -243,7 +243,7 @@ body {
 }
 
 .gallery {
-  background-color: #54483A;
+  background-color: #f9f7f6;
   grid-column: full-start/full-end;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -317,6 +317,41 @@ body {
 .footer {
   background-color: #101d2c;
   grid-column: full-start/full-end;
+  padding: 8rem;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+}
+.nav__link:link, .nav__link:visited {
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem;
+  display: block;
+  transition: all 0.2s;
+}
+.nav__link:hover, .nav__link:active {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #aaa;
+  text-align: center;
+  width: 70%;
 }
 
 /*# sourceMappingURL=style.css.map */
